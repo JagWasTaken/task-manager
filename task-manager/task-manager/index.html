@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pages</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        label{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <p>
+                <label>Title</label><br>
+                <input type="text" name="form_title">
+            </p>
+
+            <p>
+                <label>Description</label><br>
+                <textarea name="form_description" rows="5" cols="21"></textarea>
+            </p>
+
+            <p>
+                <label>Category</label><br>
+                <input type="text" name="form_category">
+            </p>
+
+            <p>
+                <label>Priority Level</label><br>
+                <select name="priority_level">
+                    <option>Select an item</option>
+                    <option value="Low">Low
+                    <option value="Medium">Medium<br>
+                    <option value="High">High<br>
+                </select>
+            </p>
+
+            <p>
+                <label>Progress Level</label><br>
+                <select name="progress_level">
+                    <option>Select an item</option>
+                    <option>To-do</option>
+                    <option>Pending</option>
+                    <option>Completed</option>
+                </select>
+            </p>
+            <div>
+                <button>Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
